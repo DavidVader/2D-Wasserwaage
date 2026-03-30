@@ -1,10 +1,3 @@
-/*
-* Waage-2026-03-06.c
-*
-* Created: 3/6/2026 8:24:46 AM
-* Author : David
-*/
-
 #include <avr/io.h>
 #include <math.h>
 #include "i2clib.h"
@@ -128,10 +121,10 @@ int main(void)
 		Berechne aus den x, y, z Werte den Neigungswinkel und gib ihn im Display aus.
 		Tipp:
 		benutze die Funktion float atan2(float y, float x)
-		Das Ergebnis wird im Bogenmaß zurückgegeben, Bereich -PI bis +PI.
+		Das Ergebnis wird im BogenmaÃŸ zurÃ¼ckgegeben, Bereich -PI bis +PI.
 		Rechne es in Grad um.
 		Tipp2:
-		Für den Wert in der x-y-Ebene benutze Pythagoras.
+		FÃ¼r den Wert in der x-y-Ebene benutze Pythagoras.
 		*/
 		float xf = x;
 		float yf = y;
@@ -145,7 +138,7 @@ int main(void)
 
 		// Aufgabe LED wie eine Luftblase von einer Wasserwaage
 		float richtung = atan2(yf, xf) * 57.2958;  // Richtung als Winkel
-		if (richtung < 0) richtung += 360;  // behält alles in 0-360° Bereich (keine negative zahl)
+		if (richtung < 0) richtung += 360;  // behÃ¤lt alles in 0-360Â° Bereich (keine negative zahl)
 		
 		led_state = 0x01;
 		
