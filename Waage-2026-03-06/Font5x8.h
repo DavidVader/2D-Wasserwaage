@@ -1,14 +1,5 @@
-/*
- * Font5x8.h
- *
- * Created: 3/6/2026 8:00:16 AM
- *  Author: david
- */ 
-
-
 #ifndef FONT5X8_H_
 #define FONT5X8_H_
-
 
 const unsigned char font[] PROGMEM = {
 	0x00, 0x00, 0x00, 0x00, 0x00, 5, // 0x20: space
@@ -114,8 +105,5 @@ const unsigned char font[] PROGMEM = {
 	0x3C, 0x41, 0x40, 0x41, 0x7C, 5, // 0x84: ?
 	0xFE, 0x01, 0x49, 0x49, 0x36, 5  // 0x85: ?
 };
-
-
-
 
 #endif /* FONT5X8_H_ */
